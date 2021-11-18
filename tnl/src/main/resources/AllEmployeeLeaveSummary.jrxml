@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllEmployeeLeaveSummary" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ef5940d8-283f-4356-9268-abae0918bcf3">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+    <parameter name="P_FROM_DATE" class="java.util.Date"/>
+    <parameter name="P_TO_DATE" class="java.util.Date"/>
+    <parameter name="P_EMP_HR_DEPT_ID" class="java.lang.Integer"/>
+    <queryString>
+        <![CDATA[SELECT leaveApp.app_date AS leaveAppDate,
+	leaveApp.hr_emp_id AS leaveAppHrEmpId,
+	leaveApp.leave_from_date AS leaveAppFromDate,
+	leaveApp.leave_to_date AS leaveAppToDate,
+	emp.name AS emp_name
+FROM tnl_leave_app leaveApp,
+	hr_emp emp
+WHERE
+	 emp.id = leaveApp.hr_emp_id
+	 AND leaveApp.leave_from_date >= $P{P_FROM_DATE}
+	 AND leaveApp.leave_to_date <= $P{P_TO_DATE}
+	 AND emp.hr_dept_id = $P{P_EMP_HR_DEPT_ID}
+ORDER BY leaveApp.leave_from_date ASC]]>
+    </queryString>
+    <field name="leaveappdate" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.name" value="leaveappdate"/>
+        <property name="com.jaspersoft.studio.field.label" value="leaveappdate"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tnl_leave_app"/>
+    </field>
+    <field name="leaveapphrempid" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="leaveapphrempid"/>
+        <property name="com.jaspersoft.studio.field.label" value="leaveapphrempid"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tnl_leave_app"/>
+    </field>
+    <field name="leaveappfromdate" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.name" value="leaveappfromdate"/>
+        <property name="com.jaspersoft.studio.field.label" value="leaveappfromdate"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tnl_leave_app"/>
+    </field>
+    <field name="leaveapptodate" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.name" value="leaveapptodate"/>
+        <property name="com.jaspersoft.studio.field.label" value="leaveapptodate"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="tnl_leave_app"/>
+    </field>
+    <field name="emp_name" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="emp_name"/>
+        <property name="com.jaspersoft.studio.field.label" value="emp_name"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="hr_emp"/>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="52" splitType="Stretch">
+            <staticText>
+                <reportElement x="1" y="7" width="560" height="24" uuid="d014bad8-0d04-41e0-b6ca-86cf78d19a1b"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Arial Rounded MT Bold" size="16" isBold="false"/>
+                </textElement>
+                <text><![CDATA[List of Employee Leave Summary]]></text>
+            </staticText>
+            <textField pattern="MMMMM dd, yyyy">
+                <reportElement x="460" y="31" width="100" height="19" uuid="e2c975c5-116b-422c-b8fa-5412de191ea6"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="61" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="31" width="90" height="30" uuid="6dca4358-2e34-48bf-a109-f936013ca6f5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cc5b3e-d0a4-4b39-9751-aeca483aad41"/>
+                </reportElement>
+                <text><![CDATA[Application Date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="90" y="31" width="100" height="30" uuid="912824bf-935e-4448-9c59-8669043bbd4f">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="558c87e2-96a1-4d4d-b678-0040a4053a54"/>
+                </reportElement>
+                <text><![CDATA[Employee Id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="190" y="30" width="100" height="30" uuid="e62aa3ff-77f6-4137-8cd4-ee0baff89a57">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51f93cd0-0a3f-4b41-b729-f5c2d83435ec"/>
+                </reportElement>
+                <text><![CDATA[From Date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="290" y="31" width="100" height="30" uuid="3466c6d7-ab50-4ce0-bbdd-1bc21a3d59c9">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="febd28fb-b4eb-483d-983b-83630d4b8393"/>
+                </reportElement>
+                <text><![CDATA[To Date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="390" y="30" width="100" height="30" uuid="f0d90242-9beb-470e-bfef-d1b1b0099322">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f379f2db-42a2-4d03-8b2e-ab324a9ddbf6"/>
+                </reportElement>
+                <text><![CDATA[Employee Name]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="36" splitType="Stretch">
+            <textField>
+                <reportElement x="1" y="0" width="90" height="30" uuid="d181fa25-7a17-43e8-a4a5-af3c608ba00e">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cc5b3e-d0a4-4b39-9751-aeca483aad41"/>
+                </reportElement>
+                <box leftPadding="3">
+                    <pen lineWidth="0.25"/>
+                </box>
+                <textFieldExpression><![CDATA[$F{leaveappdate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="90" y="0" width="100" height="30" uuid="915e8dfd-f7d3-42ce-b952-a865f5d447bb">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="558c87e2-96a1-4d4d-b678-0040a4053a54"/>
+                </reportElement>
+                <box leftPadding="3">
+                    <pen lineWidth="0.25"/>
+                </box>
+                <textFieldExpression><![CDATA[$F{leaveapphrempid}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="190" y="0" width="100" height="30" uuid="38e1169d-7ce5-4c43-a7a2-316b57c4e8fb">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51f93cd0-0a3f-4b41-b729-f5c2d83435ec"/>
+                </reportElement>
+                <box leftPadding="3">
+                    <pen lineWidth="0.25"/>
+                </box>
+                <textFieldExpression><![CDATA[$F{leaveappfromdate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="290" y="0" width="100" height="30" uuid="0e5e45ff-ba4d-45c2-b6e3-0b3bf22f90a7">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="febd28fb-b4eb-483d-983b-83630d4b8393"/>
+                </reportElement>
+                <box leftPadding="3">
+                    <pen lineWidth="0.25"/>
+                </box>
+                <textFieldExpression><![CDATA[$F{leaveapptodate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="390" y="0" width="100" height="30" uuid="c01335b8-6116-4e4f-aabf-9ff1e0e184a5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f379f2db-42a2-4d03-8b2e-ab324a9ddbf6"/>
+                </reportElement>
+                <box leftPadding="3">
+                    <pen lineWidth="0.25"/>
+                </box>
+                <textFieldExpression><![CDATA[$F{emp_name}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="30" splitType="Stretch">
+            <staticText>
+                <reportElement x="440" y="10" width="40" height="20" uuid="b9b8a902-7c70-45e5-9ff3-d672ff9a75aa"/>
+                <textElement>
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Page No :]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="480" y="10" width="40" height="20" uuid="49782a9c-b7a0-43f4-8cef-9bab5682319c"/>
+                <textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+</jasperReport>

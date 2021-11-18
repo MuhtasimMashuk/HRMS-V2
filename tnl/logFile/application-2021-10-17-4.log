@@ -1,0 +1,12 @@
+2021-10-17T17:31:42.739+0600 INFO Starting ProtocolHandler ["http-nio-9093"]
+2021-10-17T17:31:42.762+0600 INFO Tomcat started on port(s): 9093 (http) with context path '/leave'
+2021-10-17T17:31:42.763+0600 INFO Updating port to 9093
+2021-10-17T17:31:42.792+0600 INFO DiscoveryClient_LEAVE-SERVICE/ibcsoutsource01.ibcs-primax.com:LEAVE-SERVICE:9093 - registration status: 204
+2021-10-17T17:31:42.822+0600 INFO Started TnlApplication in 7.318 seconds (JVM running for 10.538)
+2021-10-17T17:31:42.827+0600 INFO This is an info message
+2021-10-17T17:31:42.827+0600 WARN This is a warn message
+2021-10-17T17:31:42.827+0600 ERROR This is an error message
+2021-10-17T17:36:42.344+0600 INFO Resolving eureka endpoints via configuration
+2021-10-17T17:40:19.827+0600 INFO Unregistering application LEAVE-SERVICE with eureka with status DOWN
+2021-10-17T17:40:19.828+0600 INFO Saw local status change event StatusChangeEvent [timestamp=1634470819828, current=DOWN, previous=UP]
+2021-10-17T17:40:19.829+0600 INFO DiscoveryClient_LEAVE-SERVICE/ibcsoutsource01.ibcs-primax.com:LEAVE-SERVICE:9093: registering service...

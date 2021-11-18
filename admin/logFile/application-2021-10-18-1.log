@@ -1,0 +1,11 @@
+2021-10-18T17:26:13.038+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:31:13.037+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:36:13.034+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:41:13.031+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:46:13.029+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:46:35.008+0600 INFO Unregistering application ADMIN-SERVICE with eureka with status DOWN
+2021-10-18T17:46:35.118+0600 INFO Saw local status change event StatusChangeEvent [timestamp=1634557595008, current=DOWN, previous=UP]
+2021-10-18T17:46:35.424+0600 INFO DiscoveryClient_ADMIN-SERVICE/ibcsoutsource01.ibcs-primax.com:ADMIN-SERVICE:9091: registering service...
+2021-10-18T17:46:36.621+0600 INFO DiscoveryClient_ADMIN-SERVICE/ibcsoutsource01.ibcs-primax.com:ADMIN-SERVICE:9091 - registration status: 204
+2021-10-18T17:46:46.202+0600 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-18T17:46:48.378+0600 INFO HikariPool-1 - Shutdown initiated...

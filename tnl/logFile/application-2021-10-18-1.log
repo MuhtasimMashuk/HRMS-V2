@@ -1,0 +1,10 @@
+2021-10-18T09:57:37.850+0600 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-18T09:57:37.904+0600 WARN Unable to start LiveReload server
+2021-10-18T09:57:37.963+0600 INFO For 'HR-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2021-10-18T09:57:38.447+0600 INFO Eureka HTTP Client uses RestTemplate.
+2021-10-18T09:57:38.583+0600 WARN Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-10-18T09:57:38.668+0600 INFO Setting initial instance status as: STARTING
+2021-10-18T09:57:38.701+0600 INFO Initializing Eureka in region us-east-1
+2021-10-18T09:57:38.705+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T09:57:38.729+0600 INFO Disable delta property : false
+2021-10-18T09:57:38.729+0600 INFO Single vip registry refresh property : null

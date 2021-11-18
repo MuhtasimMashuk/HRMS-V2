@@ -1,0 +1,11 @@
+2021-10-17T17:31:38.099+0600 INFO Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-17T17:31:38.235+0600 INFO Initializing Spring embedded WebApplicationContext
+2021-10-17T17:31:38.236+0600 INFO Root WebApplicationContext: initialization completed in 2144 ms
+2021-10-17T17:31:38.398+0600 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-17T17:31:38.451+0600 INFO HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-17T17:31:38.552+0600 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-17T17:31:38.653+0600 INFO HikariPool-1 - Starting...
+2021-10-17T17:31:38.801+0600 INFO HikariPool-1 - Start completed.
+2021-10-17T17:31:38.815+0600 INFO HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-10-17T17:31:39.920+0600 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-17T17:31:39.936+0600 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'

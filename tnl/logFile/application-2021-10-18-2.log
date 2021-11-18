@@ -1,0 +1,12 @@
+2021-10-18T09:57:38.729+0600 INFO Force full registry fetch : false
+2021-10-18T09:57:38.738+0600 INFO Application is null : false
+2021-10-18T09:57:38.738+0600 INFO Registered Applications size is zero : true
+2021-10-18T09:57:38.738+0600 INFO Application version is -1: true
+2021-10-18T09:57:38.739+0600 INFO Getting all instance registry info from the eureka server
+2021-10-18T09:57:39.047+0600 INFO The response status is 200
+2021-10-18T09:57:39.050+0600 INFO Starting heartbeat executor: renew interval is: 30
+2021-10-18T09:57:39.053+0600 INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-18T09:57:39.059+0600 INFO Discovery Client initialized at timestamp 1634529459058 with initial instances count: 3
+2021-10-18T09:57:39.063+0600 INFO Registering application LEAVE-SERVICE with eureka with status UP
+2021-10-18T09:57:39.064+0600 INFO Saw local status change event StatusChangeEvent [timestamp=1634529459064, current=UP, previous=STARTING]
+2021-10-18T09:57:39.066+0600 INFO DiscoveryClient_LEAVE-SERVICE/ibcsoutsource01.ibcs-primax.com:LEAVE-SERVICE:9093: registering service...

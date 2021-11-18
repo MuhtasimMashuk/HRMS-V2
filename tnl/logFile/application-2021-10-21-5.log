@@ -1,0 +1,11 @@
+2021-10-21T17:39:42.589+0600 INFO Resolving eureka endpoints via configuration
+2021-10-21T17:44:42.595+0600 INFO Resolving eureka endpoints via configuration
+2021-10-21T17:49:42.594+0600 INFO Resolving eureka endpoints via configuration
+2021-10-21T17:52:12.555+0600 INFO Unregistering application LEAVE-SERVICE with eureka with status DOWN
+2021-10-21T17:52:12.781+0600 INFO Saw local status change event StatusChangeEvent [timestamp=1634817132609, current=DOWN, previous=UP]
+2021-10-21T17:52:12.838+0600 INFO DiscoveryClient_LEAVE-SERVICE/ibcsoutsource01.ibcs-primax.com:LEAVE-SERVICE:9093: registering service...
+2021-10-21T17:52:16.183+0600 INFO DiscoveryClient_LEAVE-SERVICE/ibcsoutsource01.ibcs-primax.com:LEAVE-SERVICE:9093 - registration status: 204
+2021-10-21T17:52:39.221+0600 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-21T17:52:46.081+0600 INFO HikariPool-1 - Shutdown initiated...
+2021-10-21T17:52:46.835+0600 INFO HikariPool-1 - Shutdown completed.
+2021-10-21T17:52:46.886+0600 INFO Shutting down DiscoveryClient ...

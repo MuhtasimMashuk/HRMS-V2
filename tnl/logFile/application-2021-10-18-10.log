@@ -1,0 +1,12 @@
+2021-10-18T16:57:38.727+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:02:38.788+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:07:38.787+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:12:38.786+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:17:38.784+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:22:38.781+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:27:38.779+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:32:38.776+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:37:38.773+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:42:38.770+0600 INFO Resolving eureka endpoints via configuration
+2021-10-18T17:46:32.863+0600 INFO Unregistering application LEAVE-SERVICE with eureka with status DOWN
+2021-10-18T17:46:32.878+0600 INFO Saw local status change event StatusChangeEvent [timestamp=1634557592863, current=DOWN, previous=UP]
